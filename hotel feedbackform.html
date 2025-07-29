@@ -38,7 +38,31 @@
                 <input type="checkbox" id="location" name="location" value ="location">
                 <label for="reputation">Reputation</label>
                 <input checked type="checkbox" id="reputation" name="reputation" value ="reputation">
+                <label for="price">Price</label>
+                <input type="checkbox" id="price" value="price" name="price">
             </fieldset>
+            <fieldset>
+                <legend>Ratings</legend>
+                <label>HOw would you rate your overall experience?</label>
+                <select id="service" name ="service">
+                    <option value="poor">poor</option>
+                    <option value="satisfactory">Satisfactory</option>
+                    <option value="good">Good</option>
+                    <option value="very-good">Very Good</option>
+                    <option selected value="excellent">Excellent</option>
+                </select>
+                <label for="food">How was the food?</label>
+                <select id="food" name="food">
+                     <option value="poor">poor</option>
+                    <option value="satisfactory">Satisfactory</option>
+                    <option value="good">Good</option>
+                    <option value="very-good">Very Good</option>
+                    <option selected value="excellent">Excellent</option>
+                </select>
+            </fieldset>
+            <label for="comments">Other Comments?</label>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Please provide any additional feedback or suggestions."></textarea>
+            <input type="submit" value="Submit Feedback">
         </form>
     </main>
    
