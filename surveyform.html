@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We are conducting an small online survey among our users.We'll be very greatful for your participation and it'll be a great help for us to improve our services and policies. We will be able to provide better services for everyone associated with our organization.</p>
+    <form id="survey-form" method="POST" action="https://wwww.bibekrijal.com.np">
+        <fieldset>
+            <legend>Your Information</legend>
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" placeholder="Enter your Name here" id="name" required><br><br>
+            <label id="email-label" for="email">E-mail Address:</label>
+            <input type="email" placeholder="Your email address here" id="email" required><br><br>
+            <label id ="number-label" for="number">Number:</label>
+            <input type= "number" id="number" placeholder="Age" value="number"min="1" max="80"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Survey Details</legend>
+            <label id ="role">Which option best describes your current role?<label>
+            <select id="dropdown">
+          <option id="manager">Manager</option>
+          <option id="regular-employee">Regular Employee</option>
+            </select ><br><br>
+            <label id="recommend">Would you recommend this organization to Others?</label><br>
+            <label for="yes-option">Yes</label>
+            <input type="radio" id="yes-option" name="yes-option" value="recommend">
+            <label for="maybe-option">Maybe</label>
+            <input type="radio" id="maybe-option" name="maybe-option" value="recommend">
+            <label for="no-option">No</label>
+            <input type="radio" id="no-option" name="no-option" value="recommend"><br>
+            <p>What do you like most about this organization?</p>
+            <label for="service">service</label>
+            <input type="checkbox" id="like" value="service">
+            <label for="love">AC</label>
+            <input type="checkbox" id="like" value="love"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Feedback</legend>
+            <label for="comment">Comments</label>
+            <textarea id="comment" value="comment" row="4" cols="30"></textarea>
+            <button id="submit" >submit</button>
+    </fieldset>
+    </form>
+  </body>
+</html>
